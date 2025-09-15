@@ -43,21 +43,22 @@ Em ambientes empresariais, o tráfego de rede pode ser vasto e difícil de monit
 
 1.  **Clone o repositório**:
     ```bash
-    git clone [https://github.com/](https://github.com/)[seu-usuario]/[nome-do-repositorio].git
-    cd [nome-do-repositorio]
+    git clone [https://github.com/lorac-2/meu-portifolio.git](https://github.com/lorac-2/meu-portifolio.git)
+    cd meu-portifolio
+    cd monitor-de-rede-python
     ```
-
 2.  **Instale as dependências**:
     ```bash
     pip install -r requirements.txt
     ```
-
 3.  **Ajuste as configurações**: Abra o arquivo `config.json` e defina as portas a serem monitoradas e os IPs que você considera seguros.
-
 4.  **Execute o programa**: Execute o script com privilégios de administrador.
     ```bash
-    sudo python3 monitor_rede.py -> no Linux
-    python3 monitor_rede.py  -> no Windows
+    # No Linux/macOS
+    sudo python3 monitor_rede.py 
+
+    # No Windows (Executar o CMD como Administrador)
+    python monitor_rede.py
     ```
 
 #### **3. Modo de Uso**
@@ -67,16 +68,13 @@ Quando uma atividade suspeita for detectada, o programa imprimirá um alerta. Vo
 ```text
 ALERTA: Conexão de IP não confiável | Origem: 192.168.1.5 | Porta: 22
 Deseja bloquear este IP no firewall? (s/n):
-
 Digite s para bloquear o IP. O programa executará o comando de firewall apropriado.
 
 Digite n para ignorar a ação.
 
 O programa continuará monitorando até que você o interrompa com Ctrl + C, momento em que o relatório final será gerado.
 
-"_______________________________________________________________________________________________________"
 🤝 Contribuição e Feedback
 Este projeto é uma demonstração de conceito, e sua segurança pode ser aprimorada de várias maneiras. Se você clonar este repositório, fizer melhorias no código ou encontrar bugs, por favor, me dê um feedback! Seu contributo é valioso para o aprimoramento contínuo deste projeto.
 
 Feito com ❤️ por lorac-2
-
